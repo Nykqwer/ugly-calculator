@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Calculator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+      <div class="container">
+
+        <div class="div-gif">
+            <div>EME</div>
+            <img id="meow-gif" src="assets/meow.gif" alt="">
+        </div>
+            <div class="in-box">
+                <div class="cal-box">
+                    <input type="text" class="cal-box" id="cal-input">
+                </div>
+                <div class="cal-box1">
+                    <input type="text"  disabled  class="cal-box1" id="cal-result">
+                </div>    
+        </div>
+        <div class="flex-header">
+            <div class="left-section">
+                <img class="img-icon" src="assets/icon.gif" alt="gif">
+            </div>
+            <div class="right-section">
+            <div class="undo-redo-btn">
+                <button id="undo-btn" class="undo-btn" onclick="undoLastNum()">
+                    <img class="undo" src="assets/arrow-undo.png" alt="undo">
+                </button>
+                <button id="redo-btn" class="redo-btn" onclick="redoLast()">
+                    <img class="redo" src="assets/arrow-redo.png" alt="redo">
+                </button>
+            </div>
+
+            
+         
+            <div>
+                <button class="clear" onclick="reset()">clear all</button>
+            </div>
+        </div>
+        </div>
+        <div class="cal-grid">
+
+            <button onclick="
+               calInput.value += '7';
+                ">7</button>
+
+            <button onclick="
+            calInput.value += '8';
+             ">8</button>
+
+            <button onclick="
+            calInput.value += '9';
+             ">9</button>
+
+            <button onclick="
+            calInput.value += '/';
+           type('/')">÷</button>
+
+
+
+            <button onclick="
+            calInput.value += '4';
+             ">4</button>
+            <button onclick="
+            calInput.value += '5';
+             ">5</button>
+            <button onclick="
+            calInput.value += '6';
+             ">6</button>
+            <button onclick="
+            calInput.value += '*';
+           type('*')">&#215;</button>
+
+
+
+            <button onclick="
+            calInput.value += '1' 
+             ">1</button>
+
+            <button onclick="
+            calInput.value += '2';
+             ">2</button>
+
+            <button onclick="
+            calInput.value += '3';
+             ">3</button>
+
+            <button onclick="
+            calInput.value += '-';
+           type('-')">-</button>
+
+
+            <button onclick="
+            calInput.value += 0;
+            ">0</button>
+            <button onclick=" 
+            calInput.value += '.';
+            ">.</button>
+            <button onclick="
+            calculate()
+            ">ans</button>
+            <button onclick="
+             calInput.value += '+';
+            type('+') ">+</button>
+
+        </div>
+     </div>
+     
+        <script src="index.js"></script>
+    </body>
+</html>
